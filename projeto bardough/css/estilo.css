@@ -1,0 +1,268 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'proxima-nova', Helvetica, Arial,sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+
+#topo{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/pizza.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#menu{
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+	align-items: center;}
+
+#menu li{
+	display: inline-block;
+}
+
+.nome{
+	color: white;
+	font-size: 1.8em;
+	transition-property: color;
+	transition-duration: .5s;
+}
+#menu li a {
+	padding-left: 10px;
+	font-size: 1.2em;
+	color: white;
+}
+
+#menu .barra::after{
+	content: "/";
+	padding-left: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+#menu li a:hover{
+	text-decoration: underline;
+	color: #ffaa00;
+}
+
+#menu .nome:hover{
+	color: #ffaa00;
+}
+
+#topo{
+	width: 100%;
+}
+
+.logo{
+	display: block;
+	width: 100%;
+	margin: 0px auto;
+}
+
+#nossa{
+	background-color: #191919;
+	display: flex;
+	align-items: center;
+}
+
+#bardough{
+	padding: 50px 20px 50px 250px; 
+	display: flex;
+	width: 200px;
+	flex-wrap: wrap;
+}
+
+#bardough h1{
+	color: #ffaa00;
+	padding: 10px;
+	width: 100%;
+	text-align: right;
+	font-size: 2rem;
+}
+
+#bardough h4{
+	font-family: monospace;
+	color: white;
+	width: 100%;
+	text-align: right;
+	font-size: 1.6rem;
+	font-weight: 100;
+}
+
+#vertical{
+	height: 80px;
+	width: 1px;
+	background-color: #ffaa00;
+	margin-top: 12px;
+	margin-right: 20px;
+}
+
+#historia{
+	width: 700px;
+	margin-top: 12px;
+	margin-left: 10px;
+	color: #8d8d6f;
+}
+
+.contato{
+	color: white;
+	line-height: 2rem;
+	font-size: 1.3rem;
+}
+
+#pizza_semana{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background: #101010;
+	padding-bottom: 50px;
+}
+
+.h4_pizza_semana{
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 2.3rem;
+	color: #ffaa00;
+	font-weight: 300;
+}
+
+.h4_pizza_semana::before{
+	content: '';
+	width: 25px;
+	height: 5px;
+	vertical-align: middle;
+	border-radius: 5px;
+	display: inline-block;
+	background-color: #ffaa00;
+}
+
+.h4_pizza_semana::after{
+	content: '';
+	width: 25px;
+	height: 5px;
+	vertical-align: middle;
+	border-radius: 5px;
+	display: inline-block;
+	background-color: #ffaa00;
+}
+
+.data{
+	color: white;
+	font-size: 1.5rem;
+	font-family: monospace;
+	width: 100%;
+	text-align: center;
+	font-weight: 300;
+}
+
+#img_pizza_semana{
+	width: 275px;
+	height: 275px;
+	margin: 75px 0 0 250px;
+	border-radius: 100%;
+	background-image: url(../img/pizza_semana.jpg);
+	background-size: 100%;
+	box-shadow: 0em 0em .4rem  #ffaa00;
+	background-position: center;
+	transition-property: background-size, box-shadow;
+	transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+#img_pizza_semana:hover{
+	background-size: 125%;
+	background-position: center;
+	box-shadow: 0em 0em .65rem  #ffaa00;
+	transition-duration: .5s;
+}
+
+.detalhes_semana_esc{
+	width: 50%;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.detalhes_semana_dir{
+	width: 25%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.detalhes_semana_dir h4{
+	display: block;
+	width: 100%;
+	font-weight: 300;
+	color: white;
+	font-size: 1.7rem;
+	text-align: center;
+}
+
+.detalhes_semana_dir h4::after{
+	content: '';
+	width: 75px;
+	height: 5px;
+	display: block;
+	margin: 20px auto;
+	border-radius: 5px;
+	background: #ffaa00;
+}
+
+.other{
+	color: white;
+	font-size: 1.7rem;
+	font-weight: 300;
+	margin: 0 auto;
+}
+
+#rodape{
+	width: 100%;
+	height: 100px;
+	background-color: #191919;
+	display:  grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.svg, .logo{
+	width: 120px;
+	margin-top:8px;
+	margin-left: 150px;
+}
+
+.contato{
+	margin-top: 15px;
+}
+
+.p_rodape{
+	width: 270px;
+}
+
+#direitos{
+	background-color: #101010;
+	padding: 25px;
+	color: white;
+	text-align: center;
+}
+
+#direitos h3{
+	font-family: 'Tomorrow', sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+#direitos h3::before{
+	content: '';
+	width: 75px;
+	height: 5px;
+	display: block;
+	margin: 10px auto;
+	border-radius: 5px;
+	background: #ffaa00;
+}
