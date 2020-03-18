@@ -1,0 +1,158 @@
+/* importação de fonts */
+
+@font-face {
+    font-family: "Bannie";
+    src: url("../fonts/bannie/Bannie.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Tavari";
+    src: url("../fonts/tovari_sans/TovariSans.otf") format("truetype");
+}
+
+
+/* X importação de fonts X */
+
+
+/* estilo geral */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* X estilo geral X */
+
+
+/* menu topo */
+
+.nav {
+    background-color: #485460;
+}
+
+.nav .nav-menu .nav-brand .logo {
+    font-family: 'Bannie';
+    color: #ffd32a;
+    font-size: 2rem;
+    cursor: default;
+}
+
+.nav .nav-menu .nav-items {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav .nav-menu .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    position: relative;
+}
+
+.nav .nav-menu .nav-items .nav-link .a_nav {
+    text-decoration: none;
+    color: #ffd32a;
+    font-family: 'Tavari';
+    font-size: 1.7rem;
+}
+
+.nav .nav-menu .nav-items .nav-link:hover {
+    background-color: #ffd32a;
+}
+
+.nav .nav-menu .nav-items .nav-link:hover .a_nav {
+    color: #485460;
+}
+
+
+/* X menu topo X */
+
+
+/* site-content */
+
+.site-content {
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+}
+
+
+/* X site-content X */
+
+
+/* #introdução */
+
+
+/*--------blog carousel--------*/
+
+.blog {
+    background: url('../img/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+.blog .blog-post {
+    padding-top: 6rem;
+}
+
+.blog-post .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+}
+
+.blog-content .blog-title {
+    padding: 2rem 0;
+}
+
+.blog-content .btn-blog {
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+}
+
+.blog-content span {
+    display: block;
+}
+
+section .container .owl-nav {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev i,
+.owl-nav .owl-next .owl-nav-next i {
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: var(--midnight);
+}
+
+
+/*----x---blog carousel----x---*/
+
+
+/* X #introdução X */
