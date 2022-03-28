@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINGO HELLFIRE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>BINGO <span>HELLFIRE</span></h1>
+    </header>
+    <div class="numeros">
+        <p>🔥 NÚMERO SORTEADO 🔥</p>
+        <div class="n">
+            <span class="n" id="n">0</span>
+        </div>
+        <div class="btn">
+            <button id="btnClick">SORTEAR</button>
+        </div>
+    </div>
+    <div class="ja">Já sorteados: </div>
+    <div class="sorteados">
+        
+    </div>
+<script>
+    const botao = document.getElementById('btnClick');
+    const n = document.getElementById('n');
+    var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75];
+    let save = 0;
+    let remove = 0;
+
+    botao.addEventListener("click", function () {
+        num = RandArray(myArray)
+        n.innerHTML =num;
+        Remove(num);
+        AddValue(num);
+    })
+
+    function RandArray(array) {
+        var rand = Math.random()*array.length | 0;
+        var rValue = array[rand];
+        return rValue;
+    }
+
+    function Remove(value) {
+        save = myArray.indexOf(value)
+        remove = myArray.splice(save, 1)
+    }
+
+    function AddValue(value){
+        $(".sorteados").append("<p>" + value) + "</p>";
+    }
+    
+</script>
+</body>
+</html>
