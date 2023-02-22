@@ -92,7 +92,7 @@ p {
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 7vh;
+    min-height: 70px;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -558,9 +558,9 @@ footer.footer .move-up span:hover {
 /*  viewport less then or equal to 520px  */
 
 @media only screen and (max-width: 520px) {
-    .nav {
+    /* .nav {
         height: 10vh;
-    }
+    } */
     
     main .blog {
         height: 125vh;
